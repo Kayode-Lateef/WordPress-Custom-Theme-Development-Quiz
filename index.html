@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        WordPress Custom Theme Development Quiz
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container" id="quiz">
+
+        <!-- =====================================
+             QUIZ HEADER
+        ====================================== -->
+
+        <header class="quiz-header">
+
+            <div class="quiz-title-area">
+
+                <p class="quiz-category">
+                    Web Development Assessment
+                </p>
+
+                <h1>
+                    WordPress Custom Theme Development Quiz
+
+                </h1>
+
+            </div>
+
+            <div class="quiz-info">
+
+                <p id="progress">
+                    Question 1 of 20
+                </p>
+
+                <p class="timer">
+                    Time:
+                    <span id="timer">20:00</span>
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             QUESTION AREA
+        ====================================== -->
+
+        <section class="question-section">
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+
+            <!-- =================================
+                 ANSWERS
+            ================================== -->
+
+            <div class="answer-grid">
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn0"
+                    data-choice-index="0"
+                >
+                    <span class="answer-letter">
+                        A
+                    </span>
+
+                    <span id="choice0">
+                        Answer A
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn1"
+                    data-choice-index="1"
+                >
+                    <span class="answer-letter">
+                        B
+                    </span>
+
+                    <span id="choice1">
+                        Answer B
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn2"
+                    data-choice-index="2"
+                >
+                    <span class="answer-letter">
+                        C
+                    </span>
+
+                    <span id="choice2">
+                        Answer C
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn3"
+                    data-choice-index="3"
+                >
+                    <span class="answer-letter">
+                        D
+                    </span>
+
+                    <span id="choice3">
+                        Answer D
+                    </span>
+                </button>
+
+            </div>
+
+
+            <!-- =================================
+                 NEXT BUTTON
+            ================================== -->
+
+            <div class="quiz-navigation">
+
+                <p
+                    class="selection-message"
+                    id="selection-message"
+                >
+                    Select an answer to continue.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="next-btn"
+                    id="next-btn"
+                    disabled
+                >
+                    Next Question
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="quiz-footer">
+
+            <p>
+                WordPress Custom Theme Development
+                Assessment
+            </p>
+
+            <img
+                src="logo.png"
+                alt="Kaytech IT Logo"
+                class="logo"
+            >
+
+        </footer>
+
+    </main>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
